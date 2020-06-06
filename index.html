@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google</title>
+  <link rel="icon" href="img/New Project (2).png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="menubar">
+        <ul class="menu">
+          <li><a href="mail.google.com">Почта</a></li>
+          <li><a href="mail.google.com">Картинки</a></li>
+          <li>
+            <a href="javascript:void(0);" onclick="viewdiv('mydiv');" class="menu-btn"><img src="img/123.png" /></a>
+          </li>
+          <li>
+            <a href="#"><input type="button" class="vhod" value="Войти" /></a>
+          </li>
+        </ul>
+      </div>
+      <div id="mydiv" style="display: none;" class="skritoe">
+        <a href="#"><span class="akkaunt"><img src="img/New Project (26).png" width="50px" height="50px" />
+            Аккаунт
+          </span></a>
+        <a href="#"><span class="poisc"><img src="img/New Project (2).png" width="50px" height="50px" />
+            <p>Поиск</p>
+          </span></a>
+        <a href="#"><span class="karti"><img src="img/New Project (3).png" width="50px" height="50px" />
+            <p>Карты</p>
+          </span></a>
+        <a href="#">
+          <span class="youtube"><img src="img/New Project (4).png" width="70px" height="40px" />
+            Youtube
+          </span></a>
+        <a href="#"><span class="play"><img src="img/New Project (5).png" width="50px" height="50px" />
+            <p>Play</p>
+          </span></a>
+        <a href="#">
+          <span class="pochta"><img src="img/New Project (6).png" width="70px" height="50px" />
+            Почта
+          </span></a>
+        <a href="#">
+          <span class="meet"><img src="img/New Project (7).png" width="50px" height="50px" />
+            <p>Meet</p>
+          </span></a>
+        <a href="#">
+          <span class="kontacti"><img src="img/New Project (9).png" width="52px" height="50px" />
+            Контакты
+          </span></a>
+        <a href="#">
+          <span class="disk"><img src="img/New Project (10).png" width="60px" height="50px" />
+            <p>Диск</p>
+          </span></a>
+        <a href="#">
+          <span class="kalendar"><img src="img/New Project (11).png" width="60px" height="50px" />
+            Календарь
+          </span></a>
+        <a href="#"><span class="perevodchik"><img src="img/New Project (12).png" width="50px" height="50px" />
+            Переводчик
+          </span></a>
+        <a href="#">
+          <span class="photo"><img src="img/New Project (13).png" width="50px" height="50px" />
+            <p>Фото</p>
+          </span></a>
+        <a href="#">
+          <span class="duo"><img src="img/New Project (14).png" width="54px" height="50px" />
+            <p>Duo</p>
+          </span></a>
+        <hr />
+        <a href="#"><span class="documents"><img src="img/New Project (15).png" width="40px" height="50px" />
+            Документы
+          </span></a>
+        <a href="#"><span class="tables"><img src="img/New Project (16).png" width="40px" height="50px" />
+            Таблицы
+          </span></a>
+        <a href="#">
+          <span class="prezent"><img src="img/New Project (17).png" width="40px" height="50px" />
+            Презентации
+          </span></a>
+        <a href="#"><span class="blogger"><img src="img/New Project (18).png" width="50px" height="50px" />
+            Blogger
+          </span></a>
+        <a href="#">
+          <span class="hangouts"><img src="img/New Project (19).png" width="50px" height="50px" />
+            Hangouts
+          </span></a>
+        <a href="#"><span class="googlekeep"><img src="img/New Project (20).png" width="55px" height="50px" />
+            Google Keep
+          </span></a>
+        <a href="#"><span class="jamboard"><img src="img/New Project (21).png" width="40px" height="50px" />
+            Jamboard
+          </span></a>
+        <a href="#">
+          <span class="Klass"><img src="img/New Project (22).png" width="60px" height="50px" />
+            <p>Класс</p>
+          </span></a>
+        <a href="#"><span class="zemlya"><img src="img/New Project (23).png" width="50px" height="50px" />
+            Планета Земля
+          </span></a>
+        <a href="#">
+          <span class="podborki"><img src="img/New Project (24).png" width="40px" height="50px" />
+            Подборки
+          </span></a>
+        <a href="#">
+          <span class="googleis"><img src="img/New Project (25).png" width="50px" height="50px" />
+            Google Искусство и культура
+          </span></a>
+        <div class="knopka">
+          <a href="#"> <input type="submit" class="btn" value="Другие приложения и продукты от Google" /></a>
+        </div>
+      </div>
+      <script>
+        function viewdiv(id) {
+          var el = document.getElementById(id);
+
+          if (el.style.display == "block") {
+            el.style.display = "none";
+          } else {
+            el.style.display = "block";
+          }
+        }
+      </script>
+      <div class="logo">
+        <img src="img/googlelogo_color_272x92dp.png" />
+      </div>
+    </div>
+
+    <div class="poisk">
+      <span><img src="img/лупа.png" width="30px" height="30px" /></span>
+
+      <input type="search" name="poisk" />
+      <span><a href="#"><img src="img/клавиатура.png" width="30px" height="30px" /></a></span>
+      <span><a href="#"><img src="img/microphone-google-voice-google-search-google-logo-microphone.png" width="20px"
+            height="30px" /></a></span>
+    </div>
+    <div class="knopki">
+      <input type="submit" class="btn" value="Поиск в Google" />
+      <input type="submit" class="btn" value="Мне повезет!" />
+    </div>
+    <div class="servis">
+      <p>
+        Сервисы Google доступны на разных языках: <a href="#">Беларуская</a>
+      </p>
+    </div>
+    <div class="footer">
+      <div class="poloska">
+        <p>Беларусь</p>
+      </div>
+
+      <ul class="sleva">
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Для бизнеса</a></li>
+        <li><a href="#">Всё о Google</a></li>
+        <li><a href="#">Как работает Google Поиск</a></li>
+      </ul>
+      <ul class="sprava">
+        <li><a href="#">Конфиденциальность</a></li>
+        <li><a href="#">Условия</a></li>
+        <li><a href="#">Настройки</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

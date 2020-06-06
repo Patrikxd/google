@@ -1,0 +1,768 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  position: relative;
+  height: auto;
+  font-size: 1.1em;
+  min-width: 900px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  -webkit-filter: blur(0.4px);
+}
+
+.menu {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+}
+
+ul.menu {
+  height: 40px;
+  float: right;
+  margin-right: 0px;
+  vertical-align: top;
+}
+
+ul.menu li {
+  float: left;
+  padding: 0 0 0 9px;
+  list-style: none;
+  margin: 1px 2px 0 0;
+}
+
+.logo {
+  width: 272px;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menubar {
+  margin-left: auto;
+  margin-right: 20px;
+  width: 900px;
+  height: 70px;
+}
+
+.poisk {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 50px;
+  border-radius: 30px;
+  border: solid 1px #dfdfdf;
+}
+
+input[type="text"]:hover {
+  border-color: -webkit-filter;
+}
+
+.vhod {
+  height: 30px;
+  width: 60px;
+  background-color: #086ca2;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  outline: none;
+}
+
+.vhod a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+input[type="search"] {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  width: 600px;
+  height: 40px;
+  font-size: 1.4em;
+}
+
+.poisk span {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: url();
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+}
+
+.poisk:hover {
+  border-color: rgba(223, 225, 229, 0);
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.knopki {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+}
+
+.knopki input[type="submit"] {
+  border: none;
+  margin-right: 20px;
+  height: 40px;
+  width: 150px;
+  border-radius: 6px;
+  color: #7e807e;
+  outline: none;
+  font-size: 1em;
+}
+
+.knopki input[type="submit"]:hover {
+  border: solid 1px;
+  border-color: #7e807e;
+  color: black;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.servis {
+  display: flex;
+  justify-content: center;
+}
+
+.servis p {
+  font-size: 0.9em;
+}
+
+.servis a {
+  text-decoration: none;
+  color: blue;
+}
+
+.servis a:hover {
+  text-decoration: underline;
+}
+
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-image: url(https://sun2.velcom-by-minsk.userapi.com/z_j8EPALi27JIaPj2JJXpBqLOAP8au5x8J5Acg/fTSLe74xh44.jpg);
+
+}
+
+input[type="search"]::-webkit-search-cancel-button:hover {
+  cursor: pointer;
+}
+
+.footer {
+  border-top: solid 1px #e4e4e4;
+  height: 90px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  background-color: #f2f2f2;
+  margin-bottom: 0;
+  bottom: 0;
+}
+
+.footer ul.sleva {
+  float: left;
+  list-style: none;
+  padding-left: 0%;
+}
+
+.footer ul.sleva li {
+  float: left;
+  padding-left: 30px;
+}
+
+.footer ul.sprava {
+  float: right;
+  list-style: none;
+  padding-left: 0%;
+  margin-right: 30px;
+}
+
+.footer ul.sprava li {
+  float: left;
+  padding-left: 30px;
+}
+
+.poloska p {
+  margin: 10px 0 10px 30px;
+  font-size: 1.1em;
+  color: #5f6368;
+}
+
+.poloska {
+  border-bottom: solid 1px #e4e4e4;
+}
+
+.footer ul.sprava,
+ul.sleva {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer ul.sprava li a,
+.footer ul.sleva li a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #5f6368;
+}
+
+.footer ul.sprava li a:hover,
+.footer ul.sleva li a:hover {
+  text-decoration: underline;
+  font-size: 1.1em;
+  color: #5f6368;
+}
+
+.skritoe {
+  visibility: visible;
+  height: 500px;
+  width: 350px;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  background-color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+}
+
+.skritoe::-webkit-scrollbar {
+  width: 16px;
+}
+
+.skritoe::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #dadce0;
+  height: 10px;
+  border: solid 4px white;
+}
+
+.skritoe::-webkit-scrollbar-button {
+  height: 2px;
+  display: hidden;
+}
+
+span.akkaunt {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.akkaunt img {
+  margin-top: 10px;
+}
+
+span.akkaunt:hover {
+  background-color: #f2f4ff;
+}
+
+span.poisc {
+  position: absolute;
+  left: 120px;
+  top: 20px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.poisc:hover {
+  background-color: #f2f4ff;
+}
+
+span.poisc img {
+  margin-top: 10px;
+}
+
+span.poisc p {
+  margin: 0;
+}
+
+span.karti {
+  position: absolute;
+  left: 230px;
+  top: 20px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.karti:hover {
+  background-color: #f2f4ff;
+}
+
+span.karti img {
+  margin-top: 10px;
+}
+
+span.karti p {
+  margin: 0;
+}
+
+span.youtube {
+  position: absolute;
+  left: 10px;
+  top: 140px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.youtube:hover {
+  background-color: #f2f4ff;
+}
+
+span.youtube img {
+  margin-top: 20px;
+}
+
+span.play {
+  position: absolute;
+  left: 120px;
+  top: 140px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.play img {
+  margin-top: 10px;
+}
+
+span.play:hover {
+  background-color: #f2f4ff;
+}
+
+span.play p {
+  margin: 0;
+}
+
+span.pochta {
+  position: absolute;
+  left: 230px;
+  top: 140px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.pochta:hover {
+  background-color: #f2f4ff;
+}
+
+span.pochta img {
+  margin-top: 10px;
+}
+
+span.meet {
+  position: absolute;
+  left: 10px;
+  top: 260px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.meet:hover {
+  background-color: #f2f4ff;
+}
+
+span.meet img {
+  margin-top: 10px;
+}
+
+span.meet p {
+  margin: 0;
+}
+
+span.kontacti {
+  position: absolute;
+  left: 120px;
+  top: 260px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.kontacti:hover {
+  background-color: #f2f4ff;
+}
+
+span.kontacti img {
+  margin-top: 10px;
+}
+
+span.disk {
+  position: absolute;
+  left: 230px;
+  top: 260px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.disk:hover {
+  background-color: #f2f4ff;
+}
+
+span.disk img {
+  margin-top: 10px;
+}
+
+span.disk p {
+  margin: 0;
+}
+
+span.kalendar {
+  position: absolute;
+  left: 10px;
+  top: 380px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.kalendar:hover {
+  background-color: #f2f4ff;
+}
+
+span.kalendar img {
+  margin-top: 10px;
+}
+
+span.perevodchik {
+  position: absolute;
+  left: 120px;
+  top: 380px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.perevodchik:hover {
+  background-color: #f2f4ff;
+}
+
+span.perevodchik img {
+  margin-top: 10px;
+}
+
+span.photo {
+  position: absolute;
+  left: 230px;
+  top: 380px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.photo:hover {
+  background-color: #f2f4ff;
+}
+
+span.photo img {
+  margin-top: 10px;
+}
+
+span.photo p {
+  margin: 0;
+}
+
+span.duo {
+  position: absolute;
+  left: 10px;
+  top: 500px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.duo:hover {
+  background-color: #f2f4ff;
+}
+
+span.duo img {
+  margin-top: 10px;
+}
+
+span.duo p {
+  margin: 0;
+}
+
+span.documents {
+  position: absolute;
+  left: 10px;
+  top: 630px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.skritoe hr {
+  position: absolute;
+  top: 610px;
+  width: 100%;
+}
+
+span.documents:hover {
+  background-color: #f2f4ff;
+}
+
+span.documents img {
+  margin-top: 10px;
+}
+
+span.tables {
+  position: absolute;
+  left: 120px;
+  top: 630px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.tables:hover {
+  background-color: #f2f4ff;
+}
+
+span.tables img {
+  margin-top: 10px;
+}
+
+span.prezent {
+  position: absolute;
+  left: 230px;
+  top: 630px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.prezent:hover {
+  background-color: #f2f4ff;
+}
+
+span.prezent img {
+  margin-top: 10px;
+}
+
+span.blogger {
+  position: absolute;
+  left: 10px;
+  top: 750px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.blogger:hover {
+  background-color: #f2f4ff;
+}
+
+span.blogger img {
+  margin-top: 10px;
+}
+
+span.hangouts {
+  position: absolute;
+  left: 120px;
+  top: 750px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.hangouts:hover {
+  background-color: #f2f4ff;
+}
+
+span.hangouts img {
+  margin-top: 10px;
+}
+
+span.googlekeep {
+  position: absolute;
+  left: 230px;
+  top: 750px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.googlekeep:hover {
+  background-color: #f2f4ff;
+}
+
+span.googlekeep img {
+  margin-top: 10px;
+}
+
+span.jamboard {
+  position: absolute;
+  left: 10px;
+  top: 870px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.jamboard:hover {
+  background-color: #f2f4ff;
+}
+
+span.jamboard img {
+  margin-top: 10px;
+}
+
+span.Klass {
+  position: absolute;
+  left: 120px;
+  top: 870px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.Klass:hover {
+  background-color: #f2f4ff;
+}
+
+span.Klass img {
+  margin-top: 10px;
+}
+
+span.Klass p {
+  margin: 0;
+}
+
+span.zemlya {
+  position: absolute;
+  left: 230px;
+  top: 870px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.zemlya:hover {
+  background-color: #f2f4ff;
+}
+
+span.zemlya img {
+  margin-top: 10px;
+}
+
+span.podborki {
+  position: absolute;
+  left: 10px;
+  top: 990px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+span.podborki:hover {
+  background-color: #f2f4ff;
+}
+
+span.podborki img {
+  margin-top: 10px;
+}
+
+span.googleis {
+  position: absolute;
+  left: 120px;
+  top: 990px;
+  height: 130px;
+  width: 100px;
+  text-align: center;
+}
+
+span.googleis:hover {
+  background-color: #f2f4ff;
+}
+
+span.googleis img {
+  margin-top: 10px;
+}
+
+.knopka {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 80px;
+  margin-left: 25px;
+  margin-right: 25px;
+  top: 1150px;
+  text-align: center;
+}
+
+.knopka input[type="submit"] {
+  border: none;
+  margin-right: 20px;
+  height: 60px;
+  width: 280px;
+  border-radius: 6px;
+  color: #1a73e8;
+  outline: none;
+  font-size: 0.9em;
+  text-decoration: none;
+  white-space: normal;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+}
+
+.knopka input[type="submit"]:hover {
+  background-color: #f2f4ff;
+}
+
+.skritoe span {
+  border-radius: 10px;
+}
+
+.skritoe a {
+  text-decoration: none;
+  color: black;
+}
